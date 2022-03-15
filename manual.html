@@ -1,0 +1,179 @@
+<img src="https://picsum.photos/200" alt="random image from picsum.photos" />
+
+<!-- coolors.co -->
+<style>
+  * {
+    border: 2px solid red;
+  }
+
+  /* border and outline examples */
+  .stamp {
+    outline-width: 5px;
+    outline-style: dotted;
+    outline-color: white;
+    outline-offset: -4px;
+    background-color: #222;
+    height: 100px;
+    width: 200px;
+  }
+
+  .box {
+    margin-top: 50px;
+    height: 150px;
+    width: 300px;
+    background: #ffcc33;
+    border: 10px double red;
+    outline: 3px solid red;
+    outline-offset: -17px;
+  }
+</style>
+
+<!-- to center inline elements we need to work with the parent -->
+
+<!-- to center block elements we can use margin left and right set to auto -->
+<!-- to align block elements to the right we set margin-left to auto -->
+<!-- to align block elements to the left we set margin-right to auto -->
+
+<!-- float example -->
+<!-- html -->
+
+<body>
+  <!-- section 1 -->
+  <div class="section-1">
+    <div class="one">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+        laborum!
+      </p>
+    </div>
+    <div class="two">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+        laborum!
+      </p>
+    </div>
+    <div class="three">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+        laborum!
+      </p>
+    </div>
+  </div>
+  <!-- first heading -->
+  <h1>The Next Day</h1>
+  <!-- section 2 -->
+  <div class="section-2">
+    <div class="one">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+        ipsam.
+      </p>
+    </div>
+    <div class="two">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+        ipsam.
+      </p>
+    </div>
+    <div class="three">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+        ipsam.
+      </p>
+    </div>
+    <div class="four">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+        ipsam.
+      </p>
+    </div>
+  </div>
+  <h2>welcome to our company!</h2>
+</body>
+
+<!-- css -->
+
+* { margin: 0; padding: 0; box-sizing: border-box; } body { font-family:
+-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; } .section-1 div { width:
+33.33%; height: 200px; float: left; } .section-1 .one { background: red; }
+.section-1 .two { background: green; } .section-1 .three { background: blue; }
+.section-2 div { width: 25%; /* width: 50%; */ height: 200px; float: right; }
+.section-2 .one { background: red; } .section-2 .two { background: green; }
+.section-2 .three { background: blue; } .section-2 .four { background: yellow; }
+h1 { text-transform: capitalize; text-align: center; padding: 3rem; clear: left;
+} h2 { text-transform: capitalize; text-align: center; background: black; color:
+#fff; padding: 2rem; clear: right; }
+
+<!-- end of float example -->
+
+<!-- position -->
+<!-- static by default -->
+
+<!--
+::before and ::after pseudo elements creates element and
+inserts before and after CONTENT
+content='' - is required
+img - does NOT work, it's the content itself
+-->
+
+<!-- 
+Selectors Re-Visited
+
+Basic Selectors
+Pseudo Class Selectors
+Pseudo Element Selectors
+
+==Basic Selectors
+Universal selector *
+ID selector #
+Class selector .
+Simple element selector h1 p etc.
+
+==Descendant and Child Selectors
+
+Direct Child >
+-->
+
+<!-- 
+First-line and First-letter
+
+p::first-line {
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 150%;
+}
+-->
+
+<!-- 
+:hover pseudo-class Selector
+
+hover can be used on any element
+ -->
+
+<!-- 
+:link - unvisited links with href
+:visited - visited links
+:hover - hover
+:active - as the user clicks
+a - all links
+ -->
+
+<!-- 
+:root pseudo-class Selector
+
+root element of the document, higher spesificity
+html element
+general styles
+css variables
+ -->
+
+<!-- 
+Transform, Transition and Animation
+
+transform: translate();
+
+
+ -->

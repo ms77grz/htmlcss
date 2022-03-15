@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banner Example</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .hero {
+        min-height: 100vh;
+        background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)),
+          url('./hero-bcg.jpg') center/cover no-repeat fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: 4rem;
+        text-transform: capitalize;
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .banner {
+        min-height: 100vh;
+        background: #f1f5f8;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>page title</h1>
+    </header>
+    <div class="banner"></div>
+    <a href="./index.html">back home </a>
+  </body>
+</html>

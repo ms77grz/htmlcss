@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.navbar {
+  height: 6rem;
+  background: #fff;
+}
+
+.logo {
+  font-size: 2rem;
+  color: red;
+}
+
+.hero {
+  background: #222;
+  color: #fff;
+  min-height: calc(100vh - 6rem);
+}
+
+span {
+  color: red;
+  font-size: 2rem;
+}
+
+.hero-btn {
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 0.1rem;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background-color: #ff5d5d;
+}
