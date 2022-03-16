@@ -36,7 +36,7 @@ Variables
   --clr-grey-7: hsl(211, 27%, 70%);
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-10: hsl(206, 33%, 96%);
   --clr-white: #fff;
   --ff-primary: 'Lato', sans-serif;
   --transition: all 0.3s linear;
@@ -295,6 +295,67 @@ About
 Services
 ===============
 */
+.services {
+  background: var(--clr-grey-10);
+}
+
+.service {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.service-icon {
+  background: var(--clr-primary-5);
+  color: var(--clr-primary-1);
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-text {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 567px) {
+  .services-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .service {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .service {
+    flex: 0 0 calc(33.33% - 1rem);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .service {
+    display: flex;
+    text-align: left;
+  }
+
+  .service-icon {
+    align-self: flex-start;
+  }
+
+  .service-info {
+    padding-left: 1rem;
+  }
+
+  .service-title {
+    margin-bottom: 0.5rem;
+  }
+}
 
 /*
 =============== 
