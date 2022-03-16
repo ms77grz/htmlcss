@@ -147,6 +147,35 @@ p {
   background: var(--clr-primary-8);
 }
 
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title h2 {
+  text-transform: uppercase;
+}
+
+.section-title span {
+  color: var(--clr-primary-5);
+}
+
+.section-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
 /*
 =============== 
 Navbar
@@ -218,6 +247,48 @@ About
 /* section add to globals */
 /* title add to globals */
 /* section center add to globals */
+.about-img,
+.about-info {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .about-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-img,
+  .about-info {
+    flex: 0 0 calc(50% - 2rem);
+    margin-bottom: 0;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .about-img::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 0.5rem solid var(--clr-primary-5);
+    width: 100%;
+    height: 100%;
+    top: -1.5rem;
+    left: -1.5rem;
+    /* z-index: -1; */
+    box-sizing: border-box;
+  }
+
+  .about-img {
+    position: relative;
+  }
+
+  .about-photo {
+    position: relative;
+  }
+}
 
 /*
 =============== 
@@ -248,3 +319,7 @@ Gallery
 Footer
 ===============
 */
+footer {
+  min-height: 100vh;
+  background: #f1f5f8;
+}
