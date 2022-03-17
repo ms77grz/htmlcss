@@ -1,9 +1,8 @@
 // ********** set date ************
 // select span
-const date = (document.getElementById(
-  "date"
-).innerHTML = new Date().getFullYear());
+const date = (document.getElementById('date').textContent = new Date().getFullYear());
 
+/* 
 // ********** nav toggle ************
 // select button and links
 const navBtn = document.getElementById("nav-toggle");
@@ -35,3 +34,4 @@ scrollLinks.forEach(link => {
     });
   });
 });
+ */
