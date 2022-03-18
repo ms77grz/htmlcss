@@ -10,32 +10,26 @@
       .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100px 100px 100px 100px 100px;
-        grid-template-areas:
-          'a a b'
-          'a a b'
-          'c c b'
-          'd d d'
-          'e f f';
+        grid-template-rows: 100px 100px;
       }
 
       .cell-1 {
-        grid-area: a;
+        order: 1;
       }
       .cell-2 {
-        grid-area: b;
+        order: -1;
       }
       .cell-3 {
-        grid-area: c;
+        order: 2;
       }
       .cell-4 {
-        grid-area: d;
+        order: 0;
       }
       .cell-5 {
-        grid-area: e;
+        order: 1;
       }
       .cell-6 {
-        grid-area: f;
+        order: -2;
       }
     </style>
   </head>
