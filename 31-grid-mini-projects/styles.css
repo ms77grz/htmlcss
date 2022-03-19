@@ -232,3 +232,11 @@ Cards
 .cards-center {
   grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
 }
+
+/* next we change the row height by adding some additional text in html */
+.card {
+  display: grid;
+  /* make sure it only has 1 column */
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
