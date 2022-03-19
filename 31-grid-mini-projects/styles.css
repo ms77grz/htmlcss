@@ -176,7 +176,7 @@ Cards
 
 .card {
   border: 1px solid var(--darkGrey);
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 .card-info {
@@ -195,6 +195,8 @@ Cards
   color: var(--primaryColor);
 }
 
+/* 3 COLUMN LAYOUT WITH MEDIA QUERIES */
+/* 
 @media screen and (min-width: 768px) {
   .cards-center {
     display: grid;
@@ -210,4 +212,23 @@ Cards
   .cards-center {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+ */
+
+/* 3 COLUMN LAYOUT WITHOUT MEDIA QUERIES */
+/* (1170 - 64) / 3 = 368px */
+.cards-center {
+  display: grid;
+  /* auto-fill will create columns */
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+  /* auto-fit won't create any columns and will fit all free space */
+  /* grid-template-columns: repeat(auto-fit, minmax(368px, 1fr)); */
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+/* 4 COLUMNS LAYOUT */
+/* (1170 - (32 * 3) / 4 = 268px */
+.cards-center {
+  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
 }
