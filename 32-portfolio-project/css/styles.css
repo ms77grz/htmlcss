@@ -522,6 +522,123 @@ Services
 Projects
 ===============
 */
+.projects-text {
+  width: 85vw;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.project {
+  position: relative;
+  background: var(--clr-primary-5);
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+}
+
+.project-info {
+  text-align: center;
+  color: var(--clr-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: var(--transition);
+  opacity: 0;
+}
+
+.project-info p {
+  text-transform: capitalize;
+  color: var(--clr-white);
+}
+
+.project:hover .project-info {
+  opacity: 1;
+}
+
+.project-img {
+  transition: var(--transition);
+  border-radius: var(--radius);
+  height: 15rem;
+  object-fit: cover;
+}
+
+.project:hover .project-img {
+  opacity: 0.1;
+}
+
+.project::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 0.25rem solid var(--clr-white);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.project:hover::after {
+  opacity: 1;
+  transform: scale(0.8, 0.65);
+}
+
+@media screen and (min-width: 676px) {
+  .projects-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .projects-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .project:hover::after {
+    opacity: 1;
+    transform: scale(0.75, 0.65);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .projects-center {
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+      'a b b'
+      'a c d';
+    gap: 1rem;
+  }
+  .project-1 {
+    grid-area: a;
+  }
+  .project-2 {
+    grid-area: b;
+  }
+  .project-3 {
+    grid-area: c;
+  }
+  .project-4 {
+    grid-area: d;
+  }
+  .project-img {
+    height: 100%;
+  }
+  .project {
+    height: 100%;
+  }
+
+  .project-1:hover .project::after {
+    transform: scale(0.8);
+  }
+  .project-2:hover .project::after {
+    transform: scale(0.9, 0.6);
+  }
+  .project-3:hover .project::after {
+    transform: scale(0.8, 0.6);
+  }
+  .project-4:hover .project::after {
+    transform: scale(0.8, 0.6);
+  }
+}
 
 /*
 =============== 
