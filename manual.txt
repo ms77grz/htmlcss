@@ -256,3 +256,14 @@ BUTTONS SETUP
   width: 200px;
   margin: 0 auto;
 }
+
+
+===
+vscode line width
+
+},
+  "explorer.confirmDragAndDrop": false,
+  "prettier.printWidth": 130,
+  "editor.rulers": [130],
+  "window.zoomLevel": -1
+}
