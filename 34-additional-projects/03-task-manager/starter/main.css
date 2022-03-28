@@ -301,8 +301,6 @@ Tasks
   width: 90vw;
   max-width: var(--fixed-width);
   margin: 0 auto;
-  margin-top: 2rem;
-  padding-bottom: 4rem;
 }
 .tasks {
   display: grid;
